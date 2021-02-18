@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 from stack import Stack
 
 print("\nLet's play Towers of Hanoi!!")
@@ -42,7 +44,7 @@ def get_input():
     if user_input in choises:
       for i in range(len(stacks)):
         return stacks[i]
-        
+
 #Play the Game
 
 num_user_moves = 0
@@ -71,4 +73,3 @@ while(right_stack.get_size() != num_disks):
       print("\n\nInvalid Move. Try Again")
 
 print("\n\nYou completed the game in {0} moves, and the optimal number of moves is {1}".format(num_user_moves, num_optimal_moves))
-
